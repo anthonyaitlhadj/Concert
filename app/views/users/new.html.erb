@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <%=  form_for @user, url: {action: "create"} do |user| %>
+        <div class="form-group">
+          <label>Prénom</label>
+          <%=	 user.text_field :firstname %>
+        </div>
+        <div class="form-group">
+          <label>Nom de famille</label>
+          <%=	 user.text_field :lastname %>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <%=	 user.email_field :email %>
+        </div>
+        <div class="form-group">
+          <label>Mot de passe</label>
+          <%=	 user.password_field :password %>
+        </div>
+        <div class="form-group">
+          <label>Confirmation du mot de passe</label>
+          <%=	 user.password_field :password_confirmation %>
+        </div>
+        <div class="form-group">
+          <%=	 user.submit "Envoyer" %>
+        </div>
+    <%	end %>
+  </div>
+</div>
