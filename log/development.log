@@ -7090,3 +7090,315 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/bhyb" for 127.0.0.1 at 2016-11-16 20:45:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/bhyb"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered collection of /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (6.4ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.7ms)
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:46:23 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:49:14 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/aaitlhadj/Bureau/Projet/Concert/app/views/users/index.html.erb:3: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                               ^
+/home/aaitlhadj/Bureau/Projet/Concert/app/views/users/index.html.erb:5: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/aaitlhadj/Bureau/Projet/Concert/app/views/users/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting ')'
+/home/aaitlhadj/Bureau/Projet/Concert/app/views/users/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/users/index.html.erb:3: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/users/index.html.erb:5: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.0ms)
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:49:56 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-16 20:49:58 +0100
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (44.2ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = NULL, "remember_me_token_expires_at" = NULL WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 47ms (ActiveRecord: 44.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:49:58 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-11-16 20:50:05 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'rr4jMDc8epE9pg5psp6B', "remember_me_token_expires_at" = '2016-11-23 19:50:05.776307' WHERE "users"."id" IS NULL[0m
+  Rendered sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-11-16 20:50:13 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pLcLUNjywONRmWuVaieIqEPlXKquHM1uS18v5BWSokgIXsVdtPpbK1aHTCkWdGdkuRuhBLK3MOTaaquS7R4Ljg==", "user"=>{"email"=>"qkabasele@gmail.com", "password"=>"[FILTERED]", "remember_me!"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: remember_me!
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'xfcrJpK464uzQpMEqPfs', "remember_me_token_expires_at" = '2016-11-23 19:50:13.948782' WHERE "users"."id" IS NULL[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'rxQU5qngpuqN31QsRkwm', "remember_me_token_expires_at" = '2016-11-23 19:50:13.950033' WHERE "users"."id" IS NULL[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = 'qkabasele@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (20.9ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'yj28JbqCDr48EdEigvqY', "remember_me_token_expires_at" = '2016-11-23 19:50:14.125587' WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms (ActiveRecord: 23.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:50:14 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 56ms (Views: 52.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-16 20:50:17 +0100
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (45.3ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = NULL, "remember_me_token_expires_at" = NULL WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 48ms (ActiveRecord: 46.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:50:17 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-11-16 20:51:42 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'xsFhv5aHDPKxGzrnxPTq', "remember_me_token_expires_at" = '2016-11-23 19:51:42.681440' WHERE "users"."id" IS NULL[0m
+  Rendered sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 56ms (Views: 38.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-11-16 20:51:47 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5iBYfy65z+XhDEDyuJjhk/XRuPqKKkHt8/kb32gKyrLxWMW8YZ42weWREF8/08xqx0c//kKEBGbUk8yqgW41Qg==", "user"=>{"email"=>"qkabasele@gmail.com", "password"=>"[FILTERED]", "remember_me!"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: remember_me!
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'PXBv1CzLonF4L1xthsyd', "remember_me_token_expires_at" = '2016-11-23 19:51:47.639104' WHERE "users"."id" IS NULL[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'rBB7GyUHPNy9pBcdYMNS', "remember_me_token_expires_at" = '2016-11-23 19:51:47.640055' WHERE "users"."id" IS NULL[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = 'qkabasele@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'waqezp9zB1qibpTskyxx', "remember_me_token_expires_at" = '2016-11-23 19:51:47.813355' WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 178ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:51:47 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:52:47 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 34ms (Views: 27.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-16 20:52:54 +0100
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (42.7ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = NULL, "remember_me_token_expires_at" = NULL WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 44.0ms)
+
+
+  
+NoMethodError (undefined method `firstname' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:27:in `destroy'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.7ms)
+Started GET "/logout" for 127.0.0.1 at 2016-11-16 20:53:34 +0100
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (135.6ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = NULL, "remember_me_token_expires_at" = NULL WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 135.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:53:34 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:54:04 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-11-16 20:54:06 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  [1m[35mSQL (2.6ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = '6C2wBYxQ2HyDCkxJYqHs', "remember_me_token_expires_at" = '2016-11-23 19:54:06.459748' WHERE "users"."id" IS NULL[0m
+  Rendered sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 41ms (Views: 32.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-11-16 20:54:12 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DUK+3szMBwrlU7ZJQDbgMv0NzcwQEyicW1o9YELpwy/dfJtekHU82uurFb3avgwJ/Hs9/X5ggNTDHLZtwO4wOw==", "user"=>{"email"=>"qkabasele@gmail.com", "password"=>"[FILTERED]", "remember_me!"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: remember_me!
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'opyamQFwpdPjxJNnhctz', "remember_me_token_expires_at" = '2016-11-23 19:54:12.412404' WHERE "users"."id" IS NULL[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'HDeSqZE1XqCWEqsUzpFK', "remember_me_token_expires_at" = '2016-11-23 19:54:12.413320' WHERE "users"."id" IS NULL[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = 'qkabasele@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'Jw7koixK55QoUMps7Wrh', "remember_me_token_expires_at" = '2016-11-23 19:54:12.613485' WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 207ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:54:12 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:54:27 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 36ms (Views: 29.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-16 20:54:31 +0100
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (32.7ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = NULL, "remember_me_token_expires_at" = NULL WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 34.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:54:31 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2016-11-16 20:54:34 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = '43KYWy5P2RBBp1Gzs7QP', "remember_me_token_expires_at" = '2016-11-23 19:54:34.743975' WHERE "users"."id" IS NULL[0m
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2016-11-16 20:54:39 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zH8BXai6+k0vehm9fowRDkA122ss0VD4w/a9V9eIzfDSljfaBOnCYFAK2TnHf2QRElVG01+wiqJAIS4lZfUulg==", "user"=>{"email"=>"qkabasele@gmail.com", "password"=>"[FILTERED]", "remember_me!"=>"0"}, "commit"=>"Log in"}
+Unpermitted parameter: remember_me!
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'KzXpPEh62psynWRPUqCg', "remember_me_token_expires_at" = '2016-11-23 19:54:39.117871' WHERE "users"."id" IS NULL[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = '3siVnoAdQsVkgWssGMjL', "remember_me_token_expires_at" = '2016-11-23 19:54:39.118810' WHERE "users"."id" IS NULL[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = 'qkabasele@gmail.com' ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = 'Q5A6qABpCJePiRSCw9qL', "remember_me_token_expires_at" = '2016-11-23 19:54:39.315498' WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 202ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:54:39 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-16 20:54:51 +0100
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (49.6ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = NULL, "remember_me_token_expires_at" = NULL WHERE "users"."id" = $1[0m  [["id", 2]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 52ms (ActiveRecord: 50.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-16 20:54:51 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+

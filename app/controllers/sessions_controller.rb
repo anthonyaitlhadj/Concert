@@ -13,7 +13,8 @@ class SessionsController < ApplicationController
     p "Remember_me: #{@user.remember_me!}"
     user = login(@user.email, @user.password, @user.remember_me!)
     if user
-      redirect_back_or_to root_url, :notice => "#{params[:firstname]} #{params[:lastname]} s'est connecté !"
+      redirect_back_or_to root_url
+      p "Connexion: L'utilisateur s'est connecté !"
     else
       p @user.email, @user.password, @user.remember_me!
       flash.now.alert = "Email or password was invalid"
@@ -23,6 +24,7 @@ class SessionsController < ApplicationController
   def destroy
     logout
     redirect_to root_url, :notice => "Logged out!"
+    p "Déconnexion: L'utilisateur s'est déconnecté !"
   end
 
   def users_params
