@@ -17,6 +17,7 @@ class UsersController < ApplicationController
       render json: @user.errors
     end
   end
+
   
   private
   def users_params
