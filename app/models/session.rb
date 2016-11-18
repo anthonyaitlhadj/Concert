@@ -1,3 +1,3 @@
-class Session < ApplicationRecord
+class Session < ActiveRecord::Base
 
 end

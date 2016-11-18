@@ -35,6 +35,11 @@
               </div>
 
               <div style="margin-bottom: 25px" class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                <%=	 user.text_field :pseudo, placeholder: "Pseudo", :html =>{:class=>"form-control"} %>
+              </div>
+
+              <div style="margin-bottom: 25px" class="input-group">
                 <span class="input-group-addon glyphicon glyphicon-lock"></span>
                 <%=	 user.password_field :password, placeholder: "Mot de passe", :html =>{:class=>"form-control"}  %>
               </div>

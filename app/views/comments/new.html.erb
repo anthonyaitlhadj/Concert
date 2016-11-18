@@ -1,0 +1,5 @@
+<%= form_for @comment, url: {action: "create"} do |comment| %>
+    <%=	 comment.hidden_field :user%>
+    <%=	 comment.text_area :contenu %>
+    <%= comment.submit "Envoyer" %>
+<%	end %>
