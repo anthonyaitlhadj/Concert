@@ -1,31 +1,31 @@
 class CommentsController < ApplicationController
-
+  #before_action :find_concert
   def index
     @comments = Comment.all
   end
 
   def new
     @comment = Comment.new
-    @user = User.new
+
   end
 
   def create
-    #@user = User.new(params.require(:user).permit(:firstname, :lastname))
-    #p "Email: #{@user.email}"
-    #p "Password: #{@user.password}"
-    #p "Remember_me: #{@user.remember_me!}"
-    @comment = Comment.new(comments_params)
-    #@comment.c_firstname = @user.firstname
-    #@comment.c_lastname = @user.lastname
+    @comment = Comment.new(params.require(:comment).permit(:contenu))
+    @comment.user_id = current_user.id
+    @comment.pseudo = current_user.pseudo
     if @comment.save
       redirect_to comments_path
+      p "Le commentaire est entré en base"
+      p "Pseudo: #{@comment.pseudo}"
+      p "User_id: #{@comment.user_id}"
+      p "Contenu: #{@comment.contenu}"
     else
       render json: @comment.errors
     end
   end
 
   private
-  def comments_params
-    params.require(:comment).permit(:contenu, :c_firstname, :c_lastname, :users)
+  def find_concert
+    #@concert = Concert.find(params[:concert_id])
   end
 end

@@ -9,7 +9,8 @@ class UsersController < ApplicationController
   end
 
   def create
-     if @user.save
+    @user = User.new(users_params)
+    if @user.save
       redirect_to root_url, :notice => "Inscription terminée !"
     else
       render json: @user.errors
@@ -19,7 +20,6 @@ class UsersController < ApplicationController
   
   private
   def users_params
-    params.require(:user).permit(:firstname, :lastname, :email, :pseudo, :password, :password_confirmation)
-    @user.admin = 0
+    params.require(:user).permit(:firstname, :lastname, :email, :pseudo,:password, :password_confirmation, :admin)
   end
 end

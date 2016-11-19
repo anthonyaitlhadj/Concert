@@ -1,4 +1,5 @@
 <% if logged_in? %>
+    Logged in as: <b><%= current_user.pseudo %></b> with an ID of <b><%= current_user.id %></b>
     <h1><%= link_to "Commentaires", comments_path %></h1>
     <h1><%= link_to "Se déconnecter", logout_path %></h1>
     <%	else  %>
