@@ -1,5 +1,7 @@
 <h1><%= link_to "S'inscrire", new_user_path %></h1>
 <h1><%= link_to "Se connecter", new_session_path %></h1>
+<h1><%= link_to "insert concert", new_concert_path %></h1>
 <% if logged_in? %>
     <h1><%= link_to "Se déconnecter", logout_path %></h1>
+
 <% end %>

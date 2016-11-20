@@ -29,4 +29,21 @@ ActiveRecord::Schema.define(version: 20161115223335) do
     t.index ["remember_me_token"], name: "index_users_on_remember_me_token", using: :btree
   end
 
+
+
+  create_table "Concerts", force: :cascade do |t|
+    t.string   "concertname",                        null: false
+    t.string   "date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "remember_me_token"
+    t.datetime "remember_me_token_expires_at"
+    t.string   "places"
+    t.index ["concertname"], name: "index_concerts_on_Concerts", unique: true, using: :btree
+    t.index ["remember_me_token"], name: "index_concerts_on_remember_me_token", using: :btree
+  end
+
+
+
+
 end
