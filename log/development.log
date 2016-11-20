@@ -959,3 +959,597 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 109ms (Views: 45.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-11-19 18:02:55 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 1566ms (Views: 1448.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 18:03:04 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 18:09:52 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 762ms (Views: 669.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 18:09:56 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 18:10:08 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 18:10:34 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 119ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:10:38 +0100
+Processing by ReservationsController#new as HTML
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 263.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERREUR:  la relation « reservations » n'existe pas
+LINE 8:                WHERE a.attrelid = '"reservations"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+             (SELECT c.collname FROM pg_collation c, pg_type t
+               WHERE c.oid = a.attcollation AND t.oid = a.atttypid AND a.attcollation <> t.typcollation),
+                     col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"reservations"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  
+app/controllers/reservations_controller.rb:8:in `new'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.7ms)
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:14:16 +0100
+Processing by ReservationsController#new as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 7.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERREUR:  la relation « reservations » n'existe pas
+LINE 8:                WHERE a.attrelid = '"reservations"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+             (SELECT c.collname FROM pg_collation c, pg_type t
+               WHERE c.oid = a.attcollation AND t.oid = a.atttypid AND a.attcollation <> t.typcollation),
+                     col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"reservations"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  
+app/controllers/reservations_controller.rb:8:in `new'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.7ms)
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:14:53 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (73.2ms)
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `firstname' for #<Reservation >):
+    22:               <% end %>
+    23:               <div style="margin-bottom: 25px" class="input-group">
+    24:                 <span class="input-group-addon glyphicon glyphicon-user" aria-hidden="true"></span>
+    25:                 <%=	 resa.text_field :firstname, placeholder: "Prénom" , :html =>{:class=>"form-control"}%>
+    26:               </div>
+    27:               <div style="margin-bottom: 25px" class="input-group">
+    28:                 <span class="input-group-addon glyphicon glyphicon-user"></span>
+  
+app/views/reservations/new.html.erb:25:in `block in _app_views_reservations_new_html_erb__3058144545277282443_47119923453760'
+app/views/reservations/new.html.erb:12:in `_app_views_reservations_new_html_erb__3058144545277282443_47119923453760'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.7ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.3ms)
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:23:09 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (24.9ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `firstname' for #<Reservation >):
+    22:               <% end %>
+    23:               <div style="margin-bottom: 25px" class="input-group">
+    24:                 <span class="input-group-addon glyphicon glyphicon-user" aria-hidden="true"></span>
+    25:                 <%=	 resa.text_field :firstname, placeholder: "Prénom" , :html =>{:class=>"form-control"}%>
+    26:               </div>
+    27:               <div style="margin-bottom: 25px" class="input-group">
+    28:                 <span class="input-group-addon glyphicon glyphicon-user"></span>
+  
+app/views/reservations/new.html.erb:25:in `block in _app_views_reservations_new_html_erb__3058144545277282443_47119903723480'
+app/views/reservations/new.html.erb:12:in `_app_views_reservations_new_html_erb__3058144545277282443_47119903723480'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.4ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.7ms)
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:23:28 +0100
+Processing by ReservationsController#new as HTML
+Completed 500 Internal Server Error in 86ms (ActiveRecord: 2.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERREUR:  la relation « reservations » n'existe pas
+LINE 8:                WHERE a.attrelid = '"reservations"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+             (SELECT c.collname FROM pg_collation c, pg_type t
+               WHERE c.oid = a.attcollation AND t.oid = a.atttypid AND a.attcollation <> t.typcollation),
+                     col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a LEFT JOIN pg_attrdef d
+                  ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+               WHERE a.attrelid = '"reservations"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+  
+app/controllers/reservations_controller.rb:8:in `new'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.7ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.3ms)
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:32:46 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 533ms (Views: 515.9ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:34:22 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2016-11-19 18:35:23 +0100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ucKGcr4s/G89+xr6HYyfhFEXAUtfDhYBNoRmBZMhkEmQG1dVu2XfqCvEQmbfy+bR+bk2r8iEmCowXruqnHVOBg==", "reservation"=>{"firstname"=>"anthony", "lastname"=>"ait lhadj", "email"=>"anthony.aitlhadj@gmail.com", "nb_tickets"=>"4"}, "commit"=>"Réserver"}
+Unpermitted parameter: nb_tickets
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReservation Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "reservations" WHERE "reservations"."email" = $1 LIMIT $2[0m  [["email", "anthony.aitlhadj@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "reservations" ("firstname", "lastname", "email") VALUES ($1, $2, $3)[0m  [["firstname", "anthony"], ["lastname", "ait lhadj"], ["email", "anthony.aitlhadj@gmail.com"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 11.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::NotNullViolation: ERREUR:  une valeur NULL viole la contrainte NOT NULL de la colonne « nb_tickets »
+DETAIL:  La ligne en échec contient (anthony, ait lhadj, anthony.aitlhadj@gmail.com, null)
+: INSERT INTO "reservations" ("firstname", "lastname", "email") VALUES ($1, $2, $3)):
+  
+app/controllers/reservations_controller.rb:13:in `create'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.8ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.9ms)
+Started POST "/reservations" for 127.0.0.1 at 2016-11-19 18:36:26 +0100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ucKGcr4s/G89+xr6HYyfhFEXAUtfDhYBNoRmBZMhkEmQG1dVu2XfqCvEQmbfy+bR+bk2r8iEmCowXruqnHVOBg==", "reservation"=>{"firstname"=>"anthony", "lastname"=>"ait lhadj", "email"=>"anthony.aitlhadj@gmail.com", "nb_tickets"=>"4"}, "commit"=>"Réserver"}
+Unpermitted parameter: nb_tickets
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReservation Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "reservations" WHERE "reservations"."email" = $1 LIMIT $2[0m  [["email", "anthony.aitlhadj@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /home/aaitlhadj/Bureau/Projet/Concert/app/controllers/reservations_controller.rb:16)
+Redirected to http://localhost:3000/reservations/new
+Completed 302 Found in 89ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:36:26 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2016-11-19 18:37:03 +0100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0DE3A2RebDIApnJMEof6UgNQl/Mg6woBvnY8vrzHUpP56OYkYRdP9RaZKtDQwIMHq/6gF7dhhCq4rOERs5OM3A==", "reservation"=>{"firstname"=>"anthony", "lastname"=>"ait lhadj", "email"=>"anthony.aitlhadj@gmail.com", "nb_tickets"=>"4"}, "commit"=>"Réserver"}
+Unpermitted parameter: nb_tickets
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReservation Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "reservations" WHERE "reservations"."email" = $1 LIMIT $2[0m  [["email", "anthony.aitlhadj@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (2.9ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /home/aaitlhadj/Bureau/Projet/Concert/app/controllers/reservations_controller.rb:16)
+Redirected to http://localhost:3000/reservations/new
+Completed 302 Found in 23ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:37:03 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-19 18:53:22 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:53:24 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 76ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2016-11-19 18:53:33 +0100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+7JE1oe0cFGy+PEbt8xTjlFO6prEFvu+xsGxw50YcyQD3E+NJEm70iw6Ag0ZMM4cauIBM4M5BSq8Q68plZpvEA==", "reservation"=>{"firstname"=>"anthony", "lastname"=>"ait lhadj", "email"=>"anthony.aitlhadj@gmail.com", "nb_tickets"=>"4"}, "commit"=>"Réserver"}
+Unpermitted parameter: nb_tickets
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReservation Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM "reservations" WHERE "reservations"."email" = $1 LIMIT $2[0m  [["email", "anthony.aitlhadj@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /home/aaitlhadj/Bureau/Projet/Concert/app/controllers/reservations_controller.rb:16)
+Redirected to http://localhost:3000/reservations/new
+Completed 302 Found in 21ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:53:33 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:54:52 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 97ms (Views: 79.4ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2016-11-19 18:55:06 +0100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h7O+dN5kCv+xotsptH57rD2G4f3t+cU1s2F+WIxVLqGuam9T2y0pOKedg7V2OQL5lSjWGXpzSx61u6P3gwHw7g==", "reservation"=>{"firstname"=>"anthony", "lastname"=>"ait lhadj", "email"=>"anthony.aitlhadj@gmail.com", "nb_tickets"=>"4"}, "commit"=>"Réserver"}
+Unpermitted parameter: nb_tickets
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReservation Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "reservations" WHERE "reservations"."email" = $1 LIMIT $2[0m  [["email", "anthony.aitlhadj@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from create at /home/aaitlhadj/Bureau/Projet/Concert/app/controllers/reservations_controller.rb:16)
+Redirected to http://localhost:3000/reservations/new
+Completed 302 Found in 23ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-19 18:55:06 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/mailers/reservation_mailer" for 127.0.0.1 at 2016-11-20 15:37:34 +0100
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"internal"=>true, "path"=>"reservation_mailer"}
+Completed 500 Internal Server Error in 1073ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `smtp_setting=' for ActionMailer::Base:Class
+Did you mean?  smtp_settings=
+               smtp_settings
+               smtp_settings?):
+  
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:565:in `method_missing'
+actionmailer (5.0.0.1) lib/action_mailer/railtie.rb:47:in `block (3 levels) in <class:Railtie>'
+actionmailer (5.0.0.1) lib/action_mailer/railtie.rb:47:in `each'
+actionmailer (5.0.0.1) lib/action_mailer/railtie.rb:47:in `block (2 levels) in <class:Railtie>'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:965:in `<class:Base>'
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:421:in `<module:ActionMailer>'
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:10:in `<top (required)>'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `require'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:259:in `load_dependency'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `require'
+railties (5.0.0.1) lib/rails/mailers_controller.rb:45:in `show_previews?'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:367:in `block in invert_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `block (2 levels) in halting_and_conditional'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `all?'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.0ms)
+Started GET "/rails/mailers/reservation_mailer" for 127.0.0.1 at 2016-11-20 15:38:27 +0100
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"internal"=>true, "path"=>"reservation_mailer"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `smtp_setting=' for ActionMailer::Base:Class
+Did you mean?  smtp_settings=
+               smtp_settings
+               smtp_settings?):
+  
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:565:in `method_missing'
+actionmailer (5.0.0.1) lib/action_mailer/railtie.rb:47:in `block (3 levels) in <class:Railtie>'
+actionmailer (5.0.0.1) lib/action_mailer/railtie.rb:47:in `each'
+actionmailer (5.0.0.1) lib/action_mailer/railtie.rb:47:in `block (2 levels) in <class:Railtie>'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+activesupport (5.0.0.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:965:in `<class:Base>'
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:421:in `<module:ActionMailer>'
+actionmailer (5.0.0.1) lib/action_mailer/base.rb:10:in `<top (required)>'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `require'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `block in require'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:259:in `load_dependency'
+activesupport (5.0.0.1) lib/active_support/dependencies.rb:293:in `require'
+railties (5.0.0.1) lib/rails/mailers_controller.rb:45:in `show_previews?'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:367:in `block in invert_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `block (2 levels) in halting_and_conditional'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `all?'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/aaitlhadj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.5ms)
+Started GET "/" for 127.0.0.1 at 2016-11-20 16:18:59 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 1233ms (Views: 1033.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-20 16:19:04 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 573ms (Views: 113.0ms | ActiveRecord: 447.1ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2016-11-20 16:19:19 +0100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pUW2p3wpXv6MitBOWTKzszPBhCS/Hm2GuVEmUyJKKJyaEUzi/YJlDeeDENcaewHYUakTk+XPdJGKEtM6xdeWMQ==", "reservation"=>{"firstname"=>"anthony", "lastname"=>"aitlhadj", "email"=>"anthony.aitlhadj@gmail.com", "nb_tickets"=>"4"}, "commit"=>"Réserver"}
+Unpermitted parameter: nb_tickets
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReservation Exists (5.4ms)[0m  [1m[34mSELECT  1 AS one FROM "reservations" WHERE "reservations"."email" = $1 LIMIT $2[0m  [["email", "anthony.aitlhadj@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Completed 200 OK in 431ms (Views: 0.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/reservations/new" for 127.0.0.1 at 2016-11-20 16:23:05 +0100
+Processing by ReservationsController#new as HTML
+  Rendering reservations/new.html.erb within layouts/application
+  Rendered reservations/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 154ms (Views: 131.3ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2016-11-20 16:23:22 +0100
+Processing by ReservationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zGPyBWu1SNiQBhC9JeyWm6rOt9YSA95tFJ0rZzkpvKGnJ2Qh9i/chM/9hnNPckAs/QM8jAvu9w1zPC5wZjuDzQ==", "reservation"=>{"firstname"=>"anthony", "lastname"=>"ait lhadj", "email"=>"anthony.aitlhadj@gmail.com", "nb_tickets"=>"4"}, "commit"=>"Réserver"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReservation Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "reservations" WHERE "reservations"."email" = $1 LIMIT $2[0m  [["email", "anthony.aitlhadj@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "reservations" ("firstname", "lastname", "email", "nb_tickets") VALUES ($1, $2, $3, $4)[0m  [["firstname", "anthony"], ["lastname", "ait lhadj"], ["email", "anthony.aitlhadj@gmail.com"], ["nb_tickets", 4]]
+  [1m[35m (12.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 48ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-20 16:23:22 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-20 16:27:11 +0100
+Processing by ReservationsController#index as HTML
+  Rendering reservations/index.html.erb within layouts/application
+  Rendered reservations/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
