@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fc3a15e-7503-4f83-929a-cdfe929f70dd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/homes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
@@ -658,12 +659,12 @@
       <workItem from="1479468033215" duration="392000" />
       <workItem from="1479472202893" duration="9049000" />
       <workItem from="1479596967294" duration="8985000" />
-      <workItem from="1479652397683" duration="9584000" />
+      <workItem from="1479652397683" duration="9622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72506000" />
+    <option name="totallyTimeSpent" value="72544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="799" extended-state="6" />
