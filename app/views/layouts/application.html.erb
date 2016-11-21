@@ -9,6 +9,7 @@
     <%= javascript_include_tag 'bootstrap/bootstrap.min', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'bootstrap/bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'JQuery/jquery-3.1.1.min', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   </head>
 
@@ -33,7 +34,7 @@
           <ul class="nav navbar-nav">
             <li><%= link_to "Accueil", root_url %></a></li>
             <% if logged_in? && current_user.admin == 1 %>
-              <li><%= link_to "Nouveau Concert", new_user_path %></li>
+              <li><%= link_to "Nouveau Concert", new_show_path %></li>
               <li><%= link_to "Déconnexion", logout_path %></li>
             <% else %>
               <li><%= link_to "Inscription", new_user_path %></li>

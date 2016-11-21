@@ -1,9 +1,9 @@
 class HomesController < ApplicationController
   def index
-  @home = Home.all
+  	@shows = Show.all
   end
   def new
-    @home = Home.new
+
   end
 
   def create
