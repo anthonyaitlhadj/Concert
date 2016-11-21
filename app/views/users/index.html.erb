@@ -1,0 +1,10 @@
+<% if logged_in? %>
+    Logged in as: <b><%= current_user.pseudo %></b> with an ID of <b><%= current_user.id %></b>
+    <h1><%= link_to "Commentaires", comments_path %></h1>
+    <h1><%= link_to "Se déconnecter", logout_path %></h1>
+    <%	else  %>
+    <h1><%= link_to "S'inscrire", new_user_path %></h1>
+    <h1><%= link_to "Se connecter", new_session_path %></h1>
+    <h1><%= link_to "Insérer un concert", new_concert_path %></h1>
+<% end %>
+

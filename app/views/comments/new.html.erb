@@ -1,0 +1,6 @@
+Logged in as: <b><%= current_user.pseudo %></b> with an ID of <b><%= current_user.id %></b><br>
+<%= form_for @comment, url: {action: "create"} do |comment| %>
+    User: <%= comment.label current_user.pseudo %><br>
+    <%=	 comment.text_area :contenu %><br>
+    <%= comment.submit "Envoyer" %>
+<%	end %>
