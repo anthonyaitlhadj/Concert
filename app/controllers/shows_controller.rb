@@ -7,6 +7,12 @@ class ShowsController < ApplicationController
     @show = Show.new
   end
 
+  def show
+
+    @show = Show.find(params[:id])
+
+  end
+
   def create
     @show = Show.new(shows_params)
     if @show.save
