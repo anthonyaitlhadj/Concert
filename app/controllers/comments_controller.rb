@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  #before_action :find_concert
+  before_action :find_concert
   def index
     @comments = Comment.all
   end
@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     @comment.pseudo = current_user.pseudo
     if @comment.save
-      redirect_to comments_path
+      redirect_to show_path(@show)
       p "Le commentaire est entré en base"
       p "Pseudo: #{@comment.pseudo}"
       p "User_id: #{@comment.user_id}"
@@ -24,8 +24,16 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    @comment.destroy
+    redirect_to show_path(@show)
+  end
+
+  def show
+    #@comment = Comment.find(params[:id])
+  end
   private
   def find_concert
-    #@concert = Concert.find(params[:concert_id])
+    @show = Show.find(params[:show_id])
   end
 end

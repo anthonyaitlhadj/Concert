@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions
-  resources :comments
   resources :concerts
-  resources :shows
+  resources :shows do
+    resources :comments
+  end
 end

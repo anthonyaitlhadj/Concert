@@ -1,5 +1,5 @@
 class Show < ActiveRecord::Base
-
+	has_many :comments
   validates_confirmation_of :place
   validates_presence_of :place, :on => :create
   validates_presence_of :name

@@ -17,7 +17,8 @@ class ShowsController < ApplicationController
   end
 
   def show
-    
+    @show = Show.find(params[:id])
+    #@comment = Comment.new(params[:id])
   end
 
   private
