@@ -32,8 +32,14 @@
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><%= link_to "Accueil", root_url %></a></li>
-            <li><%= link_to "Inscription", new_user_path %></li>
-            <li><%= link_to "Connexion", login_path %></li>
+            <% if logged_in? && current_user.admin == 1 %>
+              <li><%= link_to "Nouveau Concert", new_user_path %></li>
+              <li><%= link_to "Déconnexion", logout_path %></li>
+            <% else %>
+              <li><%= link_to "Inscription", new_user_path %></li>
+              <li><%= link_to "Connexion", login_path %></li>
+            <%end%>
+            
           </ul>
           <%#	 formulaire %>
           <form class="navbar-form navbar-left">
