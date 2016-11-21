@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20161121100506) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "comments", force: :cascade do |t|
     t.string  "contenu"
     t.integer "user_id"
@@ -36,6 +37,8 @@ ActiveRecord::Schema.define(version: 20161121100506) do
     t.integer "places"
   end
 
+=======
+>>>>>>> 86d95757e85bf65246c8ad3ae08808ece92b552b
   create_table "shows", force: :cascade do |t|
     t.string  "name"
     t.date    "date"
@@ -44,6 +47,7 @@ ActiveRecord::Schema.define(version: 20161121100506) do
     t.string  "price"
   end
 
+<<<<<<< HEAD
   create_table "users", force: :cascade do |t|
 
     t.string   "name"
@@ -75,4 +79,6 @@ ActiveRecord::Schema.define(version: 20161121100506) do
 
   add_foreign_key "comments", "users"
 
+=======
+>>>>>>> 86d95757e85bf65246c8ad3ae08808ece92b552b
 end
