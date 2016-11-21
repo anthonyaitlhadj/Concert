@@ -3,172 +3,24 @@
 
 
 
+
+  <% @shows.each do |show| %>
   <div  id="concert" class="col-sm-6 col-md-4">
-
     <div  class="thumbnail">
-
-
-
-
-
       <img id="drag1" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" width="500" height="80">
-
-
-
       <div class="caption">
-
-        <h3 id="concertname">Concert name</h3>
-
-        <p id="concertdate">12/10/2016 </p>
-
-        <p><a href="#" class="btn btn-primary" role="button">Voir plus</a>
-
+        <h3><%= show.name %></h3>
+        <p id="concertdate"><%= show.date %></p>
+        <p>Places dispo: <%= show.place %></p>
+        <p>Prix: <%= show.price %></p>
+        <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "voir plus", show_path(show.id)%></p>
       </div>
-
     </div>
-
   </div>
-
-
-
-
-
-  <div  id="concert" class="col-sm-6 col-md-4">
-
-    <div  class="thumbnail">
-
-
-
-
-
-      <img id="drag1" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" width="500" height="80">
-
-
-
-      <div class="caption">
-
-        <h3 id="concertname">Concert name</h3>
-
-        <p id="concertdate">12/10/2016 </p>
-
-        <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Concerts",  new_show_path%></p>
-
-
-
-
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-  <div  id="concert" class="col-sm-6 col-md-4">
-
-    <div  class="thumbnail">
-
-
-
-
-
-      <img id="drag1" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" width="500" height="80">
-
-
-
-      <div class="caption">
-
-        <h3 id="concertname">Concert name</h3>
-
-        <p id="concertdate">12/10/2016 </p>
-
-        <p><a href="#" class="btn btn-primary" role="button">Voir plus</a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-  <div  id="concert" class="col-sm-6 col-md-4">
-
-    <div  class="thumbnail">
-
-
-
-
-
-      <img id="drag1" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" width="500" height="80">
-
-
-
-      <div class="caption">
-
-        <h3 id="concertname">Concert name</h3>
-
-        <p id="concertdate">12/10/2016 </p>
-
-        <p><a href="#" class="btn btn-primary" role="button">Voir plus</a>
-
-      </div>
-
-    </div>
-
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-  <div  id="concert" class="col-sm-6 col-md-4">
-
-    <div  class="thumbnail">
-
-
-
-
-
-      <img  id="drag1" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" width="500" height="80">
-
-
-
-      <div class="caption">
-
-        <h3 id="concertname">Concert name</h3>
-
-        <p id="concertdate">12/10/2016 </p>
-
-        <p><a href="#" class="btn btn-primary" role="button">Voir plus</a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-
-
-
+  <%end%>
 
 </div>
+
+
+
+

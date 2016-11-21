@@ -1,5 +1,5 @@
 <div class="container" xmlns="http://www.w3.org/1999/html">
-  <h1><%= link_to "Nouveau commentaire", new_comment_path %></h1>
+  <h1><%# link_to "Nouveau commentaire", show_comment_path %></h1>
   Logged in as: <b><%= current_user.pseudo %></b> with an ID of <b><%= current_user.id %></b>
   <div class="col-md-12">
     <% @comments.each do |comment| %>

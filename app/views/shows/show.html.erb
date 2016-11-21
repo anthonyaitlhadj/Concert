@@ -1,0 +1,24 @@
+<div class="row" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+
+  <div>
+    <img id="drag2" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" >
+    <img id="drag3" src="/assets/map.png" draggable="true" ondragstart="drag(event)" >
+  </div>
+
+  <div id="forme" class="caption">
+    <h3 id="concertname2"><i>Artiste: </i><%= @show.name %></h3>
+    <h4> <p id="concertdate2"><i>Date: </i><%= @show.date %> </p></h4>
+    <h4>  <p id="concertdate2"><i>Prix: </i> <%= @show.price %></p></h4>
+    <h4> <p>Places dispo: <%= @show.place %></p></h4>
+    <p><a href="#" class="btn btn-primary" role="button">Réserver</a><%# link_to "Réserver", new_reservation_path %></p></h5>
+  </div>
+
+  <div class="col-md-12">
+    <div class="col-md-6">
+    <%= render "comments/new" %>
+  </div>
+  <div class="col-md-6">
+    <%= render "comments/index" %>
+  </div>
+  </div>
+</div>

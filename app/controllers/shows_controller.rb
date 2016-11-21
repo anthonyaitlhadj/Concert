@@ -7,6 +7,8 @@ class ShowsController < ApplicationController
     @show = Show.new
   end
 
+
+
   def create
     @show = Show.new(shows_params)
     if @show.save
@@ -18,7 +20,9 @@ class ShowsController < ApplicationController
 
   def show
     @show = Show.find(params[:id])
-    #@comment = Comment.new(params[:id])
+    @comment = Comment.new
+    @comments = Comment.all
+    #@comment = Comment.new(@show)
   end
 
   private

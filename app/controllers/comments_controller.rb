@@ -13,12 +13,14 @@ class CommentsController < ApplicationController
     @comment = Comment.new(params.require(:comment).permit(:contenu))
     @comment.user_id = current_user.id
     @comment.pseudo = current_user.pseudo
+    @comment.show = Show.find(params[:show_id])
     if @comment.save
       redirect_to show_path(@show)
       p "Le commentaire est entré en base"
       p "Pseudo: #{@comment.pseudo}"
       p "User_id: #{@comment.user_id}"
       p "Contenu: #{@comment.contenu}"
+      p "Show_id: #{@comment.show_id}"
     else
       render json: @comment.errors
     end
