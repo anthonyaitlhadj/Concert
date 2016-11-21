@@ -1,12 +1,18 @@
 class CommentsController < ApplicationController
   before_action :find_concert
   def index
-    @comments = Comment.all
+    #@comments = Comment.all
+    @comments = Comment.find(params[:show_id])
   end
 
   def new
     @comment = Comment.new
 
+  end
+
+  def show
+    @comment = Comment.find(params[:id])
+    @comments = Show.comments
   end
 
   def create
@@ -31,9 +37,7 @@ class CommentsController < ApplicationController
     redirect_to show_path(@show)
   end
 
-  def show
-    #@comment = Comment.find(params[:id])
-  end
+  
   private
   def find_concert
     @show = Show.find(params[:show_id])

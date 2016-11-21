@@ -21,8 +21,7 @@ class ShowsController < ApplicationController
   def show
     @show = Show.find(params[:id])
     @comment = Comment.new
-    @comments = Comment.all
-    #@comment = Comment.new(@show)
+    @comments = Comment.where(show_id: @show)
   end
 
   private

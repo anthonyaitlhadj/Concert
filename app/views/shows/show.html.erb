@@ -18,7 +18,12 @@
     <%= render "comments/new" %>
   </div>
   <div class="col-md-6">
-    <%= render "comments/index" %>
+    <h3>Derniers commentaires: </h3>
+    <%# render "comments/index" %>
+    <% @comments.each do |comment|%>
+      <p>User : <%= comment.pseudo %></p>
+      <p>Commentaires : <%= comment.contenu %></p>      
+    <%end%>
   </div>
   </div>
 </div>
