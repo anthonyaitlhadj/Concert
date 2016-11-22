@@ -20,6 +20,7 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     @comment.pseudo = current_user.pseudo
     @comment.show = Show.find(params[:show_id])
+
     if @comment.save
       redirect_to show_path(@show)
       p "Le commentaire est entré en base"

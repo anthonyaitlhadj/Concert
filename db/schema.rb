@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121114037) do
+ActiveRecord::Schema.define(version: 20161122100418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-
   create_table "comments", force: :cascade do |t|
-    t.string  "contenu"
-    t.integer "user_id"
-    t.string  "pseudo"
-    t.integer "show_id"
+    t.string   "contenu"
+    t.integer  "user_id"
+    t.string   "pseudo"
+    t.integer  "show_id"
+    t.datetime "created_at"
   end
 
   create_table "concerts", force: :cascade do |t|
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20161121114037) do
     t.string   "lastname"
     t.integer  "admin"
     t.string   "pseudo"
+    t.string   "image"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["remember_me_token"], name: "index_users_on_remember_me_token", using: :btree
   end

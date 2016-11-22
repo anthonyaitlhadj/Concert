@@ -8,7 +8,7 @@
         <h3><%= show.name %></h3>
         <p id="concertdate"><%= show.date %></p>
         <p>Places dispo: <%= show.place %></p>
-        <p>Prix: <%= show.price %></p>
+        <p>Prix: <%= show.price %>€</p>
         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "voir plus", show_path(show.id)%></p>
       </div>
     </div>
@@ -16,7 +16,3 @@
   <%end%>
 
 </div>
-
-
-
-

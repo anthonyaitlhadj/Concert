@@ -1,4 +1,5 @@
 class ShowsController < ApplicationController
+  
   def index
     @shows = Show.all
   end
@@ -21,7 +22,7 @@ class ShowsController < ApplicationController
   def show
     @show = Show.find(params[:id])
     @comment = Comment.new
-    @comments = Comment.where(show_id: @show)
+    @comments = Comment.where(show_id: @show).order("created_at DESC")
   end
 
   private
