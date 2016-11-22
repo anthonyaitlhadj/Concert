@@ -1,7 +1,7 @@
 class ShowsController < ApplicationController
   
   def index
-    @shows = Show.all
+    @shows = Show.search(params[:search])
   end
 
   def new
@@ -16,12 +16,34 @@ class ShowsController < ApplicationController
       render json: @show.errors
     end
   end
+  
+
+  def edit
+    @show = Show.find(params[:id])
+  end
+  def update
+    @show = Show.find(params[:id])
+    if @show.update(shows_params)
+      redirect_to root_url
+    else
+      render json: @show.errors
+    end
+  end
 
   def show
     @show = Show.find(params[:id])
     @comment = Comment.new
     @comments = Comment.where(show_id: @show).order("created_at DESC")
   end
+
+  def destroy
+
+    @show = Show.find(params[:id])
+    @show.destroy
+
+    redirect_to shows_path
+  end
+
   
   private
   def shows_params

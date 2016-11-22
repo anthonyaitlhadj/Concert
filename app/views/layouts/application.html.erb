@@ -47,12 +47,18 @@
             
           </ul>
           <%#	 formulaire %>
-          <form class="navbar-form navbar-left">
+          <%= form_tag shows_path, class: "navbar-form navbar-left", :method => 'get' do %>
+            <div class="form-group">
+                <%= text_field_tag :search, params[:search], :placeholder=>"Chercher un concert" %>
+            </div>
+              <%= submit_tag "Recherche", class: "btn btn-default" %>
+          <% end %>
+          <!--<form class="navbar-form navbar-left">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Chercher un concert">
             </div>
             <button type="submit" class="btn btn-default">Recherche</button>
-          </form>
+          </form>-->
 
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

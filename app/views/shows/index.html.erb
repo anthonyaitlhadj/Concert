@@ -1,4 +1,4 @@
-<div class="row" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+<div id="showconcerts" class="row" xmlns:border-radius="http://www.w3.org/1999/xhtml">
 
   <% @shows.each do |show| %>
   <div  id="concert" class="col-sm-6 col-md-4">
@@ -9,7 +9,9 @@
         <p id="concertdate"><%= show.date %></p>
         <p>Places dispo: <%= show.place %></p>
         <p>Prix: <%= show.price %>€</p>
-        <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "voir plus", show_path(show.id)%></p>
+        <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Voir plus", show_path(show.id)%></p>
+        <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Supprimer", show_path(show.id), method: :delete%></p>
+        <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Modifier", edit_show_path(show.id)%></p>
       </div>
     </div>
   </div>
