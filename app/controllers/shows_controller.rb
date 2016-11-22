@@ -8,8 +8,6 @@ class ShowsController < ApplicationController
     @show = Show.new
   end
 
-
-
   def create
     @show = Show.new(shows_params)
     if @show.save
@@ -24,7 +22,7 @@ class ShowsController < ApplicationController
     @comment = Comment.new
     @comments = Comment.where(show_id: @show).order("created_at DESC")
   end
-
+  
   private
   def shows_params
     params.require(:show).permit(:name, :date, :place, :adress, :price)

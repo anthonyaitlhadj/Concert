@@ -2,13 +2,13 @@
   <div class="col-md-12">
     <%#	 @concerts.each do |concert| %>
       <div class="col-md-12">
+        <h2>Inscris toi et viens réserver ta place pour tes concerts préférés !</h2>
         <div class="panel panel-default">
           <div class="panel-heading"><h2>Derniers concerts</h2></div>
           <div class="panel-body">
             <div class="row">
               <div class="col-md-12">
                 <div class="row" xmlns:border-radius="http://www.w3.org/1999/xhtml">
-
                   <% @shows.each do |show| %>
                   <div  id="concert" class="col-sm-6 col-md-4">
                     <div  class="thumbnail">
@@ -18,7 +18,9 @@
                         <p id="concertdate"><%= show.date %></p>
                         <p>Places dispo: <%= show.place %></p>
                         <p>Prix: <%= show.price %>€</p>
+                        <%if logged_in?%>
                         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "voir plus", show_path(show.id)%></p>
+                        <%end%>
                       </div>
                     </div>
                   </div>
