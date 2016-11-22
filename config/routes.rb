@@ -9,14 +9,13 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions
-<<<<<<< HEAD
+
   resources :comments
   resources :shows do 
     resources :reservations
-=======
+  end
   resources :concerts
   resources :shows do
     resources :comments
->>>>>>> 463cf185719d437d75b6844f62eedb7bfd1779f2
   end
 end

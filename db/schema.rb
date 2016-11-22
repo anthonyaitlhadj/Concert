@@ -10,60 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20161121233302) do
-=======
 ActiveRecord::Schema.define(version: 20161122100418) do
->>>>>>> 463cf185719d437d75b6844f62eedb7bfd1779f2
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "comments", force: :cascade do |t|
-    t.string   "contenu"
-    t.integer  "user_id"
-    t.string   "pseudo"
-    t.integer  "show_id"
-    t.datetime "created_at"
-  end
-
-  create_table "reservations", force: :cascade do |t|
-    t.string  "firstname"
-    t.string  "lastname"
-    t.string  "email"
-    t.integer "nb_tickets"
-    t.integer "show_id"
-  end
-
-  create_table "shows", force: :cascade do |t|
-    t.string  "name"
-    t.date    "date"
-    t.integer "place"
-    t.string  "adress"
-    t.string  "price"
-    t.integer "show_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "login"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "admin"
-    t.string   "pseudo"
-<<<<<<< HEAD
-=======
-    t.string   "image"
-    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["remember_me_token"], name: "index_users_on_remember_me_token", using: :btree
->>>>>>> 463cf185719d437d75b6844f62eedb7bfd1779f2
-  end
-
-  add_foreign_key "comments", "shows"
-  add_foreign_key "comments", "users"
-<<<<<<< HEAD
-  add_foreign_key "reservations", "shows"
-=======
->>>>>>> 463cf185719d437d75b6844f62eedb7bfd1779f2
 end
