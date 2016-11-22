@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 20161122182932) do
-
-ActiveRecord::Schema.define(version: 20161122125422) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,13 +21,6 @@ ActiveRecord::Schema.define(version: 20161122125422) do
     t.string   "pseudo"
     t.integer  "show_id"
     t.datetime "created_at"
-  end
-
-  create_table "concerts", force: :cascade do |t|
-    t.string  "concerts"
-    t.string  "concertname"
-    t.string  "date"
-    t.integer "places"
   end
 
   create_table "reservations", force: :cascade do |t|
@@ -54,12 +44,10 @@ ActiveRecord::Schema.define(version: 20161122125422) do
     t.string   "email",                        null: false
     t.string   "crypted_password"
     t.string   "salt"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.string   "remember_me_token"
     t.datetime "remember_me_token_expires_at"
-    t.string   "firstname"
-    t.string   "lastname"
     t.integer  "admin"
     t.string   "pseudo"
     t.string   "image"
@@ -67,8 +55,6 @@ ActiveRecord::Schema.define(version: 20161122125422) do
     t.index ["remember_me_token"], name: "index_users_on_remember_me_token", using: :btree
   end
 
-  add_foreign_key "comments", "shows"
-  add_foreign_key "comments", "users"
   add_foreign_key "reservations", "shows"
   add_foreign_key "reservations", "users"
 end
