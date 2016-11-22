@@ -1,32 +1,3 @@
-#drag1{
-
-    border-radius: 20px;
-
-}
-
-
-
-#drag2{
-
-    border-radius: 20px;
-
-
-
-    margin-left: 2%;
-
-    position: absolute;
-
-
-
-
-
-    max-width: 75%;
-
-    height: 65%;
-
-}
-
-
 #drag2.img{
 
     border-radius: 20px;
@@ -41,7 +12,7 @@
 
 
 
-    max-width: 30%;
+    max-width: 20%;
 
     height: 20%;
 
@@ -57,13 +28,13 @@
 
 
 
-    margin-left: 50%;
+    margin-left: 55%;
 
 
 
 
 
-    max-width: 600px;
+    max-width: 40%;
 
     height: 20%;
 
@@ -75,13 +46,137 @@
 
 
 
+#drag1{
+
+
+
+    border-radius: 20px;
+
+
+
+}
+
+
+
+
+
+
+
+#drag2{
+
+
+
+    border-radius: 20px;
+
+
+
+
+
+
+
+    margin-left: 2%;
+
+
+
+
+
+
+
+
+
+
+
+    max-width: 800px;
+
+
+
+    height: 20%;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#drag3{
+
+
+
+    border-radius: 20px;
+
+
+
+
+
+
+
+    margin-left: 15%;
+
+
+
+
+
+
+
+
+
+
+
+    max-width: 650px;
+
+
+
+    height: 20%;
+
+
+
+
+
+
+
+    opacity: 0.7;
+
+
+
+}
+
+
+
+
+
+
+
 #drag3:hover{
 
-    
+
+
+    max-width: 700px;
+
+
 
     opacity: 1;
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -95,11 +190,111 @@
 
 
 
+
+
+
+
     text-align: center;
+
+
 
     font-style: italic;
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#concertname2{
+
+
+
+
+
+
+
+    text-align: center;
+
+
+
+    font-style: italic;
+
+    color:white;
+
+
+
+    text-shadow: 0 0 10px rgba(0,0,0, 0.5);
+
+
+
+}
+
+
+
+#desc{
+
+
+
+
+
+
+
+    text-align: center;
+
+
+
+    font-style: italic;
+
+    color:black;
+
+
+
+    text-shadow: 0 0 7px rgba(0,0,0, 0.5);
+
+
+
+}
+
+
+
+
 
 
 
@@ -107,9 +302,34 @@
 
 
 
+
+
+
+
     text-align: right;
 
+
+
 }
+#concertdate2{
+
+
+
+    font-style: italic;
+
+    color:black;
+
+
+
+    text-shadow: 0 0 7px rgba(0,0,0, 0.5);
+
+
+}
+
+
+
+
+
 
 
 
@@ -117,11 +337,23 @@
 
 
 
+
+
+
+
     text-decoration: none;
+
+
 
     background-color: white;
 
+
+
 }
+
+
+
+
 
 
 
@@ -129,11 +361,25 @@
 
 
 
+
+
+
+
     text-decoration: none;
 
 
 
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
@@ -143,29 +389,59 @@
 
 
 
+
+
+
+
     margin-left: 2%;
 
+
+
 }
+
+
+
+
 
 
 
 #insert{
 
+
+
     border-width:1px;
+
+
 
     border-style:double;
 
+
+
     border-radius: 15px;
+
+
 
     border-color:black;
 
+
+
     margin-top: 10%;
+
+
 
     text-align: center;
 
+
+
     width: 30%;
 
+
+
 }
+
+
+
+
 
 
 
@@ -173,29 +449,56 @@
 
 
 
+
+
+
+
     margin-top: 1%;
+
+
 
     margin-bottom: 1%;
 
+
+
     text-align: center;
+
+
 
     width: 90%;
 
+
+
 }
+
+
 
 body{
+
     width: 100%;
+
     height: 100%;
+
     background-image: url("/assets/r.jpg") ;
 
+
+
 }
+
+
 
 #panel{
 
+
+
     border-radius: 15px;
+
 }
+
 #panel2{
 
-    border-radius: 5px;
-}
 
+
+    border-radius: 5px;
+
+}

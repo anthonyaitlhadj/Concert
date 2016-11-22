@@ -10,8 +10,10 @@
         <p>Places dispo: <%= show.place %></p>
         <p>Prix: <%= show.price %>€</p>
         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Voir plus", show_path(show.id)%></p>
+        <% if logged_in? && current_user.admin==1 %>
         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Supprimer", show_path(show.id), method: :delete%></p>
         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Modifier", edit_show_path(show.id)%></p>
+        <% end %>
       </div>
     </div>
   </div>

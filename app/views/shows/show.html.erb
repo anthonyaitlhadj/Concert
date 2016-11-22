@@ -1,4 +1,5 @@
 <body>
+        <h2 id="concertname2"><i></i><%= @show.name %></h2>
 
   <div class="row" xmlns:border-radius="http://www.w3.org/1999/xhtml">
 
@@ -10,11 +11,10 @@
 
     <div id="forme" class="caption">
 
-        <h3 id="concertname2"><i>Artiste: </i><%= @show.name %></h3>
         <h4> <p id="concertdate2"><i>Date: </i><%= @show.date %> </p></h4>
         <h4>  <p id="concertdate2"><i>Prix: </i> <%= @show.price %>€</p></h4>
+        <h4> <p id="concertdate2">Places dispo: <%= @show.place %></p></h4>
         <h5><p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Reserver", new_show_reservation_path(@show) %></p></h5>
-        <h4> <p>Places dispo: <%= @show.place %></p></h4>
       
 
       
