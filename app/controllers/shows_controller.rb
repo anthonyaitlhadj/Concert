@@ -8,9 +8,7 @@ class ShowsController < ApplicationController
   end
 
   def show
-
     @show = Show.find(params[:id])
-
   end
 
   def create
@@ -20,10 +18,6 @@ class ShowsController < ApplicationController
     else
       render json: @show.errors
     end
-  end
-
-  def show
-    
   end
 
   private

@@ -1,6 +1,7 @@
 class Reservation < ApplicationRecord
 
   belongs_to :user
+  belongs_to :show
 
   validates_presence_of :firstname
   validates_presence_of :lastname
