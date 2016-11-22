@@ -1,4 +1,4 @@
-class RemoveCommentsToComments < ActiveRecord::Migration[5.0]
+class RemoveCommentsTableToComments < ActiveRecord::Migration[5.0]
   def change
     remove_column :comments, :comments, :string
   end

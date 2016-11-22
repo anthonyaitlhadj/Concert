@@ -1,4 +1,4 @@
-class AddUserIdToCommentsFix < ActiveRecord::Migration[5.0]
+class AddUserIdColumnToUsers < ActiveRecord::Migration[5.0]
   def change
     add_column :comments, :user_id, :int
   end

@@ -10,9 +10,49 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161122100418) do
+ActiveRecord::Schema.define(version: 20161122182932) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "comments", force: :cascade do |t|
+    t.string   "contenu"
+    t.integer  "user_id"
+    t.string   "pseudo"
+    t.integer  "show_id"
+    t.datetime "created_at"
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.string  "firstname"
+    t.string  "lastname"
+    t.string  "email"
+    t.integer "nb_tickets"
+    t.integer "show_id"
+  end
+
+  create_table "shows", force: :cascade do |t|
+    t.string  "name"
+    t.date    "date"
+    t.integer "place"
+    t.string  "adress"
+    t.string  "price"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "email",                        null: false
+    t.string   "crypted_password"
+    t.string   "salt"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.string   "remember_me_token"
+    t.datetime "remember_me_token_expires_at"
+    t.integer  "admin"
+    t.string   "pseudo"
+    t.string   "image"
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["remember_me_token"], name: "index_users_on_remember_me_token", using: :btree
+  end
+
+  add_foreign_key "reservations", "shows"
 end
