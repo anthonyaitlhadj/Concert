@@ -18,4 +18,11 @@ Rails.application.routes.draw do
   resources :shows do
     resources :comments
   end
+  resources :concerts
+  resources :shows do
+    resources :comments
+  end
+  resources :shows do 
+    resources :reservations
+  end
 end

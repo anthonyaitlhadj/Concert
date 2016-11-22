@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
   def index
-  	@shows = Show.all.limit(6)
+  	@shows = Show.all.limit(5)
   end
   def new
 

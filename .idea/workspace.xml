@@ -98,6 +98,7 @@
             <state relative-caret-position="36">
               <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="39" />
 
+
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
 
@@ -106,6 +107,7 @@
           </provider>
         </entry>
       </file>
+
 
 
       <file leaf-file-name="homes_controller.rb" pinned="false" current-in-tab="false">
@@ -203,6 +205,10 @@
       <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shows/new.html.erb">
 
+
+      <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+
       <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
 
@@ -223,7 +229,6 @@
 
             <state relative-caret-position="23">
               <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-
               <folding />
             </state>
           </provider>
@@ -265,7 +270,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="36" column="113" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="113" />
-
               <folding />
             </state>
           </provider>
@@ -314,7 +318,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
               <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-
               <folding />
             </state>
           </provider>
@@ -450,6 +453,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="-4" />
+
 
     <option name="width" value="1215" />
     <option name="height" value="733" />
@@ -792,7 +796,6 @@
       <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="Scratches" />
-
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1173,8 +1176,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-=======
->>>>>>> 463cf185719d437d75b6844f62eedb7bfd1779f2
 
 
     <option name="totallyTimeSpent" value="65111000" />
@@ -1196,11 +1197,8 @@
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1215" height="733" extended-state="6" />
 
-
-    <option name="totallyTimeSpent" value="71731000" />
-=======
     <option name="totallyTimeSpent" value="83391000" />
->>>>>>> 0320a40e1615757c75cf206f23690d62b54e3fd6
+
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="956" extended-state="6" />
@@ -1248,6 +1246,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
 
 
+
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.49771988" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1264,6 +1263,7 @@
 
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+
 
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 
@@ -1287,6 +1287,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+
 
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1571,8 +1572,7 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20161117020744_remove_users_id_foreign_key_to_users.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20161118131033_add_users_foreign_key_to_the_comments_table_fix2.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20161118143559_remove_two_attributes_to_comments.rb" />
-=======
->>>>>>> 0320a40e1615757c75cf206f23690d62b54e3fd6
+
     <entry file="file://$PROJECT_DIR$/db/migrate/20161118143904_remove_two_attributes_to_comments_fix.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20161118144110_add_user_id_to_comments_fix.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20161118133155_add_users_foreign_key_to_the_comments_table_fix3.rb" />
@@ -1662,8 +1662,6 @@
       </provider>
     </entry>
 
-=======
->>>>>>> 0320a40e1615757c75cf206f23690d62b54e3fd6
     <entry file="file://$PROJECT_DIR$/app/models/home.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/homes_controller.rb" />
 
@@ -1744,8 +1742,7 @@
         </state>
       </provider>
     </entry>
-=======
->>>>>>> 0320a40e1615757c75cf206f23690d62b54e3fd6
+
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2022,6 +2019,7 @@
         <state relative-caret-position="36">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
 
+
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="708">
@@ -2041,6 +2039,7 @@
 
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
 
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
@@ -2050,6 +2049,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
+
+        <state relative-caret-position="216">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+
 
         <state relative-caret-position="216">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
@@ -2090,7 +2093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-
           <folding />
         </state>
       </provider>

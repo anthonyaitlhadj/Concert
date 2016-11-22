@@ -9,12 +9,12 @@
         <p id="concertdate"><%= show.date %></p>
         <p>Places dispo: <%= show.place %></p>
         <p>Prix: <%= show.price %>€</p>
+
         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "voir plus", show_path(show.id)%></p>
 
         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Delet", show_path(show.id), method: :delete%></p>
 
         <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "update", edit_show_path(show.id)%></p>
-
       </div>
     </div>
   </div>

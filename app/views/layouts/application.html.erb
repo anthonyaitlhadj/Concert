@@ -47,19 +47,24 @@
             
           </ul>
           <%#	 formulaire %>
-          <form class="navbar-form navbar-left">
+          <%= form_tag shows_path, class: "navbar-form navbar-left", :method => 'get' do %>
+            <div class="form-group">
+                <%= text_field_tag :search, params[:search], :placeholder=>"Chercher un concert" %>
+            </div>
+              <%= submit_tag "Recherche", class: "btn btn-default" %>
+          <% end %>
+          <!--<form class="navbar-form navbar-left">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Chercher un concert">
             </div>
             <button type="submit" class="btn btn-default">Recherche</button>
-          </form>
+          </form>-->
 
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-<<<<<<< HEAD
-=======
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -81,7 +86,7 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
->>>>>>> 0320a40e1615757c75cf206f23690d62b54e3fd6
+
     <%= yield %>
   </body>
 </html>
