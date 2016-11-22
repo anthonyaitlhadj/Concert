@@ -1,4 +1,5 @@
 class ShowsController < ApplicationController
+  
   def index
     @shows = Show.all
   end
@@ -18,6 +19,12 @@ class ShowsController < ApplicationController
     else
       render json: @show.errors
     end
+  end
+
+  def show
+    @show = Show.find(params[:id])
+    @comment = Comment.new
+    @comments = Comment.where(show_id: @show).order("created_at DESC")
   end
 
   private

@@ -35,6 +35,10 @@
             <li><%= link_to "Accueil", root_url %></a></li>
             <% if logged_in? && current_user.admin == 1 %>
               <li><%= link_to "Nouveau Concert", new_show_path %></li>
+              <li><%= link_to "Tous les concerts", shows_path %></li>              
+              <li><%= link_to "Déconnexion", logout_path %></li>
+            <% elsif logged_in?  %>
+              <li><%= link_to "Tous les concerts", shows_path %></li>
               <li><%= link_to "Déconnexion", logout_path %></li>
             <% else %>
               <li><%= link_to "Inscription", new_user_path %></li>

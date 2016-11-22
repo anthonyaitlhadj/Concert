@@ -6,15 +6,26 @@
           <div class="panel-heading"><h2>Derniers concerts</h2></div>
           <div class="panel-body">
             <div class="row">
-              <% @shows.each do |show| %>
-                <div class="col-md-6">
-                  <h3><%= show.name %></h3>
-                  <p>Places dispo: <%= show.place %></</p>
-                  <p>Prix: <%= show.price %></</p><br>
-                  <%= link_to "voir", show_path(show.id)%>
+              <div class="col-md-12">
+                <div class="row" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+
+                  <% @shows.each do |show| %>
+                  <div  id="concert" class="col-sm-6 col-md-4">
+                    <div  class="thumbnail">
+                      <img id="drag1" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" width="500" height="80">
+                      <div class="caption">
+                        <h3><%= show.name %></h3>
+                        <p id="concertdate"><%= show.date %></p>
+                        <p>Places dispo: <%= show.place %></p>
+                        <p>Prix: <%= show.price %>€</p>
+                        <p id="bouton" class="btn btn-primary" role="button"> <%= link_to "voir plus", show_path(show.id)%></p>
+                      </div>
+                    </div>
+                  </div>
+                  <%end%>
+
                 </div>
-                <div class="col-md-6">Image</div>
-              <%end%>
+              </div>
             </div>
           </div>
         </div>
