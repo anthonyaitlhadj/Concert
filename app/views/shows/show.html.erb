@@ -1,0 +1,37 @@
+<body>
+
+  <div class="row" xmlns:border-radius="http://www.w3.org/1999/xhtml">
+
+    <div>
+      <img id="drag2" src="/assets/concert.jpg" draggable="true" ondragstart="drag(event)" >
+      <img id="drag3" src="/assets/map.PNG" draggable="true" ondragstart="drag(event)" >
+    
+    </div>
+
+    <div id="forme" class="caption">
+
+        <h3 id="concertname2"><i>Artiste: </i><%= @show.name %></h3>
+        <h4> <p id="concertdate2"><i>Date: </i><%= @show.date %> </p></h4>
+        <h4>  <p id="concertdate2"><i>Prix: </i> <%= @show.price %>€</p></h4>
+        <h5><p id="bouton" class="btn btn-primary" role="button"> <%= link_to "Reserver", new_show_reservation_path(@show) %></p></h5>
+        <h4> <p>Places dispo: <%= @show.place %></p></h4>
+      
+
+      
+        <div class="col-md-6">
+          <%= render "comments/new" %>
+        </div>
+        <div class="col-md-6">
+          <h3>Derniers commentaires: </h3>
+          <% @comments.each do |comment|%>
+            <p>User : <%= comment.pseudo %></p>
+            <p>Commentaires : <%= comment.contenu %></p>
+            <span>Créé le: <%= comment.created_at%></span>  
+          <%end%>
+        </div>
+      
+      </div>
+    </div>
+
+</body>
+

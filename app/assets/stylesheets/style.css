@@ -1,0 +1,201 @@
+#drag1{
+
+    border-radius: 20px;
+
+}
+
+
+
+#drag2{
+
+    border-radius: 20px;
+
+
+
+    margin-left: 2%;
+
+    position: absolute;
+
+
+
+
+
+    max-width: 75%;
+
+    height: 65%;
+
+}
+
+
+#drag2.img{
+
+    border-radius: 20px;
+
+
+
+    margin-left: 2%;
+
+    position: absolute;
+
+
+
+
+
+    max-width: 30%;
+
+    height: 20%;
+
+}
+
+
+
+
+
+#drag3{
+
+    border-radius: 20px;
+
+
+
+    margin-left: 50%;
+
+
+
+
+
+    max-width: 600px;
+
+    height: 20%;
+
+
+
+    opacity: 0.7;
+
+}
+
+
+
+#drag3:hover{
+
+    
+
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+#concertname{
+
+
+
+    text-align: center;
+
+    font-style: italic;
+
+}
+
+
+
+#concertdate{
+
+
+
+    text-align: right;
+
+}
+
+
+
+#bouton{
+
+
+
+    text-decoration: none;
+
+    background-color: white;
+
+}
+
+
+
+#bouton:hover{
+
+
+
+    text-decoration: none;
+
+
+
+}
+
+
+
+
+
+#forme{
+
+
+
+    margin-left: 2%;
+
+}
+
+
+
+#insert{
+
+    border-width:1px;
+
+    border-style:double;
+
+    border-radius: 15px;
+
+    border-color:black;
+
+    margin-top: 10%;
+
+    text-align: center;
+
+    width: 30%;
+
+}
+
+
+
+#insert2{
+
+
+
+    margin-top: 1%;
+
+    margin-bottom: 1%;
+
+    text-align: center;
+
+    width: 90%;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/r.jpg") ;
+
+}
+
+#panel{
+
+    border-radius: 15px;
+}
+#panel2{
+
+    border-radius: 5px;
+}
+
